@@ -14,43 +14,45 @@ class Articles extends Controller
     {
         // Récupération des articles depuis le modèle
         $articles = $this->articlesModel->getArticles();
-        $data = [
-            'articles' => $articles
-        ];
-        $this->view('articles/index', $data);
+ 
+
+        return renderTemplate('admin/articles/index', ['articles' => $articles]);
     }
 
     // Ajouter un nouvel article
     public function addArticle()
     {
         $this->articlesModel->addArticle($_POST);
-        header("Location: /articles");
+        $this->redirect('articles');
     }
 
     // Afficher le formulaire d'ajout d'article
     public function addArticleForm()
     {
-        $this->view('articles/addArticleForm');
+    
+        return renderTemplate('admin/articles/addArticleForm', []);
     }
 
     // Modifier un article
     public function update()
     {
         $this->articlesModel->update($_POST);
-        header("Location: /articles");
+        $this->redirect('articles');
     }
 
     // Supprimer un article
     public function delete($id)
     {
+ 
         $this->articlesModel->deleteArticle($id);
-        header("Location: /articles");
+        $this->redirect('articles');
+
     }
 
     // Supprimer tous les articles sélectionnés
     public function deleteAllArticles()
     {
         $this->articlesModel->deleteAllArticle($_POST['deleteAllArray']);
-        header("Location: /articles");
+        $this->redirect('articles');
     }
 }
