@@ -18,7 +18,7 @@ class Produit extends Controller
         // Use the helper function to get the singleton instance of Engine
         $produits=$this->productModel->getAllProducts();
    
-       return renderTemplate('produit/index', ['produits' => $produits]);
+       return renderTemplate('/produit/index', ['products' => $produits]);
     }
 
 

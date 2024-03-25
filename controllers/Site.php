@@ -1,27 +1,35 @@
 <?php
 
-
-class Site extends Controller
+class site extends Controller
 {
- 
+    private $productModel;
+
+    public function __construct()
+    {
+        // Instanciation du modèle ProduitModel
+        $this->productModel = $this->model('ProduitModel');
+    }
+
     // Page d'accueil
     public function index()
     {
-        // Use the helper function to get the singleton instance of Engine
-        return renderTemplate('client/site/index', ['title' => 'Djebabla']);
+        // Récupérer tous les produits
+        $products = $this->productModel->getAllProducts();
+
+        // Utilisation de la fonction d'aide pour obtenir l'instance unique de Engine
+        return renderTemplate('site/index', ['title' => 'Accueil', 'products' => $products]);
     }
 
     public function about()
     {
-        // Use the helper function to get the singleton instance of Engine
-        return renderTemplate('client/site/about', ['title' => 'Djebabla']);
+        // Utilisation de la fonction d'aide pour obtenir l'instance unique de Engine
+        return renderTemplate('site/about', ['title' => 'À propos']);
     }
 
     public function notFound()
     {
-        // Use the helper function to get the singleton instance of Engine
-        return renderTemplate('error/index', ['title' => 'Djebabla']);
+        // Utilisation de la fonction d'aide pour obtenir l'instance unique de Engine
+        return renderTemplate('error/index', ['title' => 'Page non trouvée']);
     }
-
-
 }
+?>
