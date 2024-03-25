@@ -1,11 +1,11 @@
 <?php
-class Core
-{
-    protected $currentController = 'Site'; // Default controller
-    protected $currentMethod = 'index'; // Default method
-    protected $params = [];
+/*
+    * App Core Class
+    * Create URL & load core controller
+    * URL FORMAT - /controller/method/params
+    */
 
-    public function __construct()
+    class Core
     {
         protected $currentController = 'site';
         protected $currentMethod = 'index';
@@ -64,5 +64,3 @@ class Core
             }
         }
     }
-}
-
