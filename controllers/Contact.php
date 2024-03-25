@@ -18,7 +18,7 @@ class Contact extends Controller
     {
       
 
-       return renderTemplate('client/contact/index', []);
+       return renderTemplate('contact/index', []);
     }
 
 

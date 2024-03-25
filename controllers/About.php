@@ -18,7 +18,7 @@ class About extends Controller
     {
       
 
-       return renderTemplate('client/about/index', []);
+       return renderTemplate('about/index', []);
     }
 
 
