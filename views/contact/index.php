@@ -51,17 +51,17 @@
         </form>
         <div class="people">
             <div>
-                <img src="img/people/1.png" alt="">
+                <img src="/phpCrud/web/assets/img/people/1.png" alt="">
                 <p><span>JOHN DOE</span>Senior Marketing Manger <br> phone no 8785646575 <br>
                 Email:contact@example.com</p>
             </div>
             <div>
-                <img src="img/people/2.png" alt="">
+                <img src="/phpCrud/web/assets/img/people/2.png" alt="">
                 <p><span>JOHN DOE</span>Senior Marketing Manger <br> phone no 8785646575 <br>
                     Email:contact@example.com</p>
             </div>
             <div>
-                <img src="img/people/3.png" alt="">
+                <img src="/phpCrud/web/assets/img/people/3.png" alt="">
                 <p><span>JOHN DOE</span>Senior Marketing Manger <br> phone no 8785646575 <br>
                     Email:contact@example.com</p>
             </div>

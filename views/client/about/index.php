@@ -7,7 +7,7 @@
 </section>
 
 <section id="about-head" class="section-p1">
-    <img src="img/about/a6.jpg" alt="">
+    <img src="/phpCrud/web/assets/img/about/a6.jpg" alt="">
     <div>
         <h2>Who We Are?</h2>
         <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis harum sequi, adipisci laudantium nemo

@@ -37,7 +37,7 @@
 
     <footer class="section-p1">
         <div class="col">
-            <img class="logo" src="img/logo.png" alt="">
+            <img class="logo" src="/phpCrud/web/assets/img/logo.png" alt="">
             <h4>Contact</h4>
             <p><strong>Address:</strong> DV Group of Companies,Pitam Pura,
                 Delhi-110034, India</p>
