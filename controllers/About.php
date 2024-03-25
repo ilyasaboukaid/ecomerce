@@ -1,26 +1,15 @@
 <?php
 
 
-
 class About extends Controller
 {
  
-
-    private $productModel;
-
-    public function __construct()
-    {
-        
-    }
-
     // Page d'accueil
     public function index()
     {
-      
-
-       return renderTemplate('client/about/index', []);
+        // Use the helper function to get the singleton instance of Engine
+        return renderTemplate('About/index', ['title' => 'Djebabla']);
     }
-
 
 
 }
