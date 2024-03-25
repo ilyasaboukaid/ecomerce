@@ -7,7 +7,6 @@ class Core
 
     public function __construct()
     {
-
         protected $currentController = 'site';
         protected $currentMethod = 'index';
         protected $params = [];
@@ -65,4 +64,5 @@ class Core
             }
         }
     }
+}
 
