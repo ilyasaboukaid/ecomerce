@@ -7,13 +7,13 @@
 
 
 <section id="products1" class="section-p1">
-    <?php foreach ($produits as $produit): ?>
+ 
 
     <div class="pro-container">
         <div class="pro" onclick="window.location.href='sproduct.html';">
             <img src="web/assets/img/Products/f1.jpg" alt="">
             <div class="des">
-                <span><?=$produit->mark; ?></span>
+                <span><?=$produit[1]->mark; ?></span>
                 <h5><?=$produit->nom; ?></h5>
                 <div class="star">
                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -26,7 +26,6 @@
             </div>
             <a href="#"><i class="fa fa-shopping-cart cart" aria-hidden="true"></i> </a>
         </div>
-    <?php     endforeach ?>
   
     </div>
 </section>
