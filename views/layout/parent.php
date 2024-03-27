@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>online_shoping</title>
     <link rel="stylesheet" href="/phpCrud/web/assets/css/layout.css">
-    <script src="web/assets/js/script.js"></script>
+    <script src="/phpCrud/web/assets/js/script.js"></script>
 </head>
 
 <body>
     <section id="header">
-        <a href="#"><img src="/phpCrud/web/assets//phpCrud/web/assets/img/logo.png" class="logo" alt=""></a>
+        <a href="#"><img src="/phpCrud/web/assets/img/logo.png" class="logo" alt=""></a>
         <div>
             <ul id="navbar">
                 <li><a class="active" href="site">Home</a></li>
