@@ -15,8 +15,8 @@
                         <form id="LoginForm" action="auth/login" method="post">
                             <h3>Welcome Back!👋</h3>
                             <br>
-                            <input type="text" name="email" placeholder="email">
-                            <input type="password" name="password"  placeholder="password">
+                            <input name='nom' type="text" placeholder="Username">
+                            <input name='password' type="password" placeholder="password">
                             <br>
                             <a href="">Forgot password?</a> <br>
                             <button type="submit" class="btn">Login</button>
@@ -26,10 +26,10 @@
                         <form id="RegForm" action="auth/register" method="post">
                             <h3> Create new account</h3>
                             <br>
-                            <input type="text" placeholder="Nom" name="nom">
-                            <input type="text" placeholder="Prenom" name="prenom">
-                            <input type="email" placeholder="Email" name="email">
-                            <input type="password" placeholder="password" name="password">
+                            <input name="prenom" type="text" autocomplete="off" placeholder="prenom">
+                            <input name="nom" type="text" autocomplete="off" placeholder="prenom">
+                            <input name="email" type="email" autocomplete="off" placeholder="Email">
+                            <input name="password" type="password" autocomplete="off" placeholder="password">
                             <button type="submit" class="btn">Create Account</button>
                             <br>
                             <a href=""><u>Already have an account? Sign in</u></a>
