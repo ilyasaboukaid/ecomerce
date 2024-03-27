@@ -3,7 +3,7 @@
 <section class="account-page">
         <div class="container">
             <div class="row">
-
+        
                 <div class="col-2">
                     <div class="form-container">
                         <div class="form-btn">
@@ -12,23 +12,24 @@
                             <hr id="Indicator">
                         </div>
 
-                        <form id="LoginForm" action="auth/login" methode="post">
+                        <form id="LoginForm" action="auth/login" method="post">
                             <h3>Welcome Back!👋</h3>
                             <br>
-                            <input type="text" placeholder="Username">
-                            <input type="password" placeholder="password">
+                            <input type="text" name="email" placeholder="email">
+                            <input type="password" name="password"  placeholder="password">
                             <br>
                             <a href="">Forgot password?</a> <br>
                             <button type="submit" class="btn">Login</button>
                             <br>
                             <a href=""><u>Don't have an account? Sign Up</u></a>
                         </form>
-                        <form id="RegForm" action="auth/register" methode="post">
+                        <form id="RegForm" action="auth/register" method="post">
                             <h3> Create new account</h3>
                             <br>
-                            <input type="text" autocomplete="off" placeholder="Username">
-                            <input type="email" autocomplete="off" placeholder="Email">
-                            <input type="password" autocomplete="off" placeholder="password">
+                            <input type="text" placeholder="Nom" name="nom">
+                            <input type="text" placeholder="Prenom" name="prenom">
+                            <input type="email" placeholder="Email" name="email">
+                            <input type="password" placeholder="password" name="password">
                             <button type="submit" class="btn">Create Account</button>
                             <br>
                             <a href=""><u>Already have an account? Sign in</u></a>
