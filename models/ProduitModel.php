@@ -12,13 +12,13 @@ class ProduitModel
         $this->db = new Database();
     }
 
-    public function getProduit()
+    public function getProduit($id)
     {
 
-        $this->db->query('select *
-                                 from product p 
-                                 order by p.id desc');
-        return $this->db->resultSet();
+        $this->db->query('SELECT * FROM product p WHERE p.id = :id');
+        $this->db->bind(':id', $id);
+
+        return $this->db->single();
     }
 
 
