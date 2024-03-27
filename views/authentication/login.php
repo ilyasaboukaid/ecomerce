@@ -12,7 +12,7 @@
                             <hr id="Indicator">
                         </div>
 
-                        <form id="LoginForm">
+                        <form id="LoginForm" action="auth/login" methode="post">
                             <h3>Welcome Back!👋</h3>
                             <br>
                             <input type="text" placeholder="Username">
@@ -23,8 +23,7 @@
                             <br>
                             <a href=""><u>Don't have an account? Sign Up</u></a>
                         </form>
-
-                        <form id="RegForm">
+                        <form id="RegForm" action="auth/register" methode="post">
                             <h3> Create new account</h3>
                             <br>
                             <input type="text" autocomplete="off" placeholder="Username">
@@ -42,3 +41,25 @@
         </div>
 
     </section>
+
+    <script>
+
+        var LoginForm = document.getElementById("LoginForm");
+        var RegForm = document.getElementById("RegForm");
+        var Indicator = document.getElementById("Indicator");
+
+        function register() {
+            RegForm.style.transform = "translateX(0px)";
+            LoginForm.style.transform = "translatex(0px)";
+            Indicator.style.transform = "translatex(100px)";
+        }
+        function login() {
+            RegForm.style.transform = "translateX(300px)";
+            LoginForm.style.transform = "translatex(300px)";
+            Indicator.style.transform = "translatex(0px)";
+        }
+
+
+    </script>
+    <script src="/phpCrud/web/assets/js/script.js">
+    </script>
