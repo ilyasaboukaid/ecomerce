@@ -49,3 +49,5 @@ class Controller
             exit; // Make sure to exit to prevent further execution
         }
 }
+
+
