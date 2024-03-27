@@ -14,7 +14,7 @@ class Auth extends Controller
     {
         // Vous devez définir la variable $produits ici ou l'obtenir d'une autre source
         $produits = []; // exemple vide, vous devez l'initialiser avec les produits réels
-        return renderTemplate('auth/index', ['products' => $produits]);
+        return renderTemplate('authentication/login', ['products' => $produits]);
     }
 
     public function login()
@@ -24,10 +24,12 @@ class Auth extends Controller
             $password = $_POST["password"];
 
             $user = $this->userModel->login($email, $password);
+
             if ($user) {
-                $this->redirect('article');
+                $this->redirect('articles');
             } else {
                 $this->redirect('auth');
+
             }
         }
     }

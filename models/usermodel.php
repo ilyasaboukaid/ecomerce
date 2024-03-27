@@ -71,7 +71,8 @@ class UserModel
         $user = $this->db->single();
 
 
-        if ($user) {
+        if ($user) { 
+            //$this->db->createSession($user);
             // Si l'utilisateur existe avec cet email, vérifiez le mot de passe
            // if (password_verify($password, $user['password'])) {
                 // Mot de passe correct, retournez les informations de l'utilisateur

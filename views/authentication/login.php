@@ -15,7 +15,7 @@
                         <form id="LoginForm" action="auth/login" method="post">
                             <h3>Welcome Back!👋</h3>
                             <br>
-                            <input name='nom' type="text" placeholder="Username">
+                            <input name='email' type="text" placeholder="email">
                             <input name='password' type="password" placeholder="password">
                             <br>
                             <a href="">Forgot password?</a> <br>
