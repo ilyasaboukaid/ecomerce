@@ -1,4 +1,4 @@
-<?php // views/home.php  ?>
+<?php // views/home.php    ?>
 <?php $this->layout('layout/parent', ['title' => 'Home']) ?>
 
 
@@ -38,7 +38,14 @@
             <option>Large</option>
         </select>
         <input type="number" value="1">
-        <button class="normal" value="Add to cart" onclick="add">Add To Cart </button>
+        <form method="post" action="acheter">
+            <input type="hidden" name="productName" value="<?= $produit->nom; ?>">
+            <input type="hidden" name="productPrice" value="<?= $produit->prix; ?>">
+            <input type="hidden" name="productDescription" value="<?= $produit->mark; ?>">
+            <input type="hidden" name="productId" value="<?= $produit->id; ?>">
+            <button type="submit" class="normal">Acheter</button>
+        </form>
+
         <h4>Products Details </h4>
         <span><?= $produit->description; ?></span>
     </div>

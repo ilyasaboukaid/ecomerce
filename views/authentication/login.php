@@ -27,7 +27,7 @@
                             <h3> Create new account</h3>
                             <br>
                             <input name="prenom" type="text" autocomplete="off" placeholder="prenom">
-                            <input name="nom" type="text" autocomplete="off" placeholder="prenom">
+                            <input name="nom" type="text" autocomplete="off" placeholder="NOM">
                             <input name="email" type="email" autocomplete="off" placeholder="Email">
                             <input name="password" type="password" autocomplete="off" placeholder="password">
                             <button type="submit" class="btn">Create Account</button>
